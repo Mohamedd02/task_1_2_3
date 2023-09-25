@@ -5,6 +5,7 @@ import 'package:project01/FoodPage.dart';
 import 'package:project01/IdeaPage.dart';
 import 'package:project01/MusicPage.dart';
 import 'package:project01/SportPage.dart';
+import 'package:project01/Task_3.dart';
 import 'package:project01/WorkPage.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -22,7 +23,10 @@ class _HomeScreenState extends State<HomeScreen> {
           backgroundColor: Colors.deepPurple,
           title: const Text('HomePage',
 
-      )),
+
+      )
+
+      ),
       drawer: const Drawer(),
       body: SafeArea(
         child: Column(
@@ -246,19 +250,19 @@ class _HomeScreenState extends State<HomeScreen> {
 
             style: ElevatedButton.styleFrom(
               minimumSize: Size(70, 40),
-              backgroundColor: Colors.deepPurple,
+              backgroundColor: Colors.white,
 
 
             ),
             onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen(),)
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const ListScreen(),)
 
               );
             },
 
 
             child: const Text(
-                'ReFresh',
+                'Task 3',
               style: TextStyle(
 
                color: Colors.black,
